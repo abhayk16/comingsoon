@@ -1,46 +1,33 @@
-<!doctype html>
-<html lang=en>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset=UTF-8 />
-   
-    <meta name=viewport content="width=device-width,initial-scale=1" />
-    <meta http-equiv=X-UA-Compatible content="ie=edge" />
-    <link rel=stylesheet href=https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css
-        integrity=sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO crossorigin=anonymous>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel=stylesheet>
-    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;700&display=swap" rel=stylesheet>
-    <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-    <script src=https://kit.fontawesome.com/3c09bcb51a.js></script>
-    <title>Comming Soon</title>
-    <link href="styles/main.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Data Waster</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class=container>
-        <div class=row>
-            <div class="left-wrap col-12 col-md-5">
-                <div class=left>
-                    <p><span class=days></span><span class=small> days</span></p>
-                    <p><span class=hours></span><span class=small> hours</span></p>
-                    <p>&nbsp;&nbsp;<span class=minutes></span><span class=small> minutes</span></p>
-                    <p>&nbsp;&nbsp;<span class=seconds></span><span class=small> seconds</span></p>
-                </div>
-            </div>
-            <div class="col-12 col-md-7 right">
-                <div class=mainInfo>
-                   
-                    <p class=slogan>
-                        <h2>अब पछताए होत क्या जब चिड़ियां चुग गई खेत... </h2>  </p>
-                        <br>
-                         
-    <br>
-    <h6>mail @ neonmannoob01@gmail.com</h6>
-   
-                         
-    </div>
-    <script type="text/javascript" src="scripts/bundle.js"></script>
- 
-</body>
 
+  <h1>Data Waster Tool</h1>
+  <h4>by Scientist(Gada Electronics)</h4>
+  <h6>Dont do dabdab,waste your data here</h6>
+
+  <div class="controls">
+    <button id="startBtn" class="btn btn-success">Start Wasting</button>
+  </div>
+
+  <div class="controls">
+    <label>Threads: <input id="threadsRange" type="range" min="0" max="10" value="0"></label>
+    <span id="threadCount">1</span>
+  </div>
+  <div>More threads = faster "data wasting"</div>
+  <div class="controls">
+    <label>Stop After (MB): <input id="stopafter" type="number" value="0"></label>
+  </div>
+
+  <div class="stat">Time Running: <span id="timeRunningText">0 sec</span></div>
+  <div class="stat">Data Wasted: <span id="dataWatsedText">0 MB</span></div>
+  <div class="stat">Instant Speed: <span id="averageSpeedText">0 Kbps</span></div>
+
+  <script src="datawaster.js"></script>
+</body>
 </html>

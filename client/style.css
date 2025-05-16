@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #edd5d5;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    margin: 20px 0;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+  }
+  
+  .btn-success {
+    background-color: #1f923a;
+  }
+  
+  .btn-danger {
+    background-color: #4e2226;
+  }
+  
+  .stat {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  input[type="range"] {
+    width: 200px;
+  }
+  
+  input[type="number"] {
+    width: 100px;
+  }
+  
