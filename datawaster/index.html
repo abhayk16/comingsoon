@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Data Waster</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <h1>Data Waster Tool</h1>
   <h4>by Scientist(Gada Electronics)</h4>
-  <h6>Dont do dabdab,waste your data here</h6>
+  <h6>Don't do dabdab, waste your data here</h6>
 
   <div class="controls">
     <button id="startBtn" class="btn btn-success">Start Wasting</button>
   </div>
 
-  <div class="controls">
-    <label>Threads: <input id="threadsRange" type="range" min="0" max="10" value="0"></label>
+  <div class="controls inline-control">
+    <label>Threads: <input id="threadsRange" type="range" min="0" max="10" value="0" /></label>
     <span id="threadCount">1</span>
   </div>
-  <div>More threads = faster "data wasting"</div>
-  <div class="controls">
-    <label>Stop After (MB): <input id="stopafter" type="number" value="0"></label>
+  <div class="compact-text">More threads = faster "data wasting"</div>
+
+  <div class="controls inline-control">
+    <label>Stop After (MB): <input id="stopafter" type="number" value="0" /></label>
   </div>
 
-  <div class="stat">Time Running: <span id="timeRunningText">0 sec</span></div>
-  <div class="stat">Data Wasted: <span id="dataWatsedText">0 MB</span></div>
-  <div class="stat">Instant Speed: <span id="averageSpeedText">0 Kbps</span></div>
+  <div class="stats-row">
+    <div class="stat">Time Running: <span id="timeRunningText">0 sec</span></div>
+    <div class="stat">Data Wasted: <span id="dataWatsedText">0 MB</span></div>
+    <div class="stat">Instant Speed: <span id="averageSpeedText">0 Kbps</span></div>
+  </div>
 
   <script src="datawaster.js"></script>
-  <br><br><br>
-  
-  <a href="./policy.html">Privacy Policy</a>
+
+  <a href="./policy.html" class="privacy-link">Privacy Policy</a>
 
 </body>
 </html>
