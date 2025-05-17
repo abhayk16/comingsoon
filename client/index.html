@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  <h1>Data Waster Tool</h1><br>
+  <h1>Data Waster Tool</h1>
   <h6>Don't do dabdab, waste your data here</h6>
 
   <div class="controls">
@@ -16,13 +16,18 @@
   </div>
 
   <div class="controls inline-control">
-    <label>Threads: <input id="threadsRange" type="range" min="0" max="10" value="0" /></label>
-    <span id="threadCount">1</span>
+    <label>Threads:
+      <input id="threadsRange" type="range" min="1" max="10" value="1" />
+      <span id="threadCount">1</span>
+    </label>
   </div>
+
   <div class="compact-text">More threads = faster "data wasting"</div>
 
   <div class="controls inline-control">
-    <label>Stop After (MB): <input id="stopafter" type="number" value="0" /></label>
+    <label>Stop After (MB):
+      <input id="stopafter" type="number" value="0" />
+    </label>
   </div>
 
   <div class="stats-row">
@@ -30,12 +35,10 @@
     <div class="stat">Data Wasted: <span id="dataWatsedText">0 MB</span></div>
     <div class="stat">Instant Speed: <span id="averageSpeedText">0 Kbps</span></div>
   </div>
-<br><br>
-<h4>-by Lol</h4>
 
-  <script src="datawaster.js"></script>
-
+  <h4>- by Lol</h4>
   <a href="./policy.html" class="privacy-link">Privacy Policy</a>
 
+  <script src="datawaster.js"></script>
 </body>
 </html>

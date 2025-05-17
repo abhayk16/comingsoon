@@ -18,8 +18,11 @@ const stopAfterInput = document.getElementById("stopafter");
 
 let timer;
 
+// Update thread count display and value
 threadsRange.addEventListener("input", () => {
-  threadCountDisplay.textContent = parseInt(threadsRange.value) + 1;
+  const val = parseInt(threadsRange.value);
+  threadCountDisplay.textContent = val;
+  threads = val;
 });
 
 function updateTimeDisplay() {
@@ -44,7 +47,7 @@ function timeRunningUpdate() {
 async function fetchChunk() {
   const startTime = Date.now();
   try {
-    const res = await fetch(`https://i.ibb.co/qJPr4nz/data-waster-hosting.png?${Math.random()}`);
+    const res = await fetch(`https://i.ibb.co/6R7fR7JN/1mb-jpg-example-file.jpg?${Math.random()}`);
     if (res.ok) {
       dataWasted += chunks;
       dataWastedObject.textContent = `${Math.floor(dataWasted / 1024)} MB`;
@@ -101,7 +104,6 @@ function start() {
 }
 
 element.addEventListener("click", () => {
-  threads = parseInt(threadsRange.value) + 1;
   const stopValue = parseInt(stopAfterInput.value);
   stopAfter = isNaN(stopValue) ? 0 : stopValue;
 
@@ -111,4 +113,3 @@ element.addEventListener("click", () => {
     start();
   }
 });
-///////////////////////////////////////////////////////////
